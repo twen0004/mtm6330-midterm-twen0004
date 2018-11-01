@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+$bcg: #844136;
+$width: 100%;
+body {
+    background-color: $bcg;
+    width: $width;
+    height: $width;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: $width;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .logo-container {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .logo {
+            width: 50px;
+
+            img {
+                width: $width;
+            }
+        }
+
+        h1 {
+            font-size: 1rem;
+            padding: 15px;
+            text-transform: capitalize;
+        }
+    }
+
+    nav {
+        width: 50%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            li {
+                padding: 0 1rem;
+                border-right: 1px solid black;
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                a {
+                    &:link {
+                        text-decoration: none;
+                        color: black;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+main {
+    width: $width;
+    height: $width;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+
+    .text {
+        width: 60%;
+        text-align: center;
+        padding: 2rem 0;
+    
+        p {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .self-image {
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+
+        img {
+            width: $width;
+        }
+    }
+}
+
+
+
+.portfolio-main {
+    width: $width;
+    height: $width;
+
+    .grid {
+        width: 82%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .img-contain {
+            width: calc(100% / 3 - 4rem);
+            margin: 2rem;
+
+            img {
+                width: $width;
+            }
+        }
+    }
+}
+
+
+
+.contact-main {
+    width: $width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        padding-top: 1rem;
+        width: 50%;
+
+        fieldset {
+            width: $width;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 10px 0;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-around;
+
+            h1 {
+                text-align: center;
+                color: white;
+                text-transform: capitalize;
+            }
+
+            label {
+                width: $width;
+                margin-bottom: 10px;
+                color: white;
+                text-transform: capitalize;
+            }
+
+            input[type="text"],
+            textarea,
+            button {
+                width: $width;
+                border: none;
+                padding: 0.5rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
